@@ -1,0 +1,13 @@
+<%= form_for(@user, method: :put) do |f| %>
+<p>
+	<%=f.label :fname %>
+	<%=f.text_field :fname %>
+</p>
+
+<p>
+	<%=f.label :lname %>
+	<%=f.text_field :lname %>
+</p>
+
+<%=f.submit %>
+<% end %>

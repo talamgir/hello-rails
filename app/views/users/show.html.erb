@@ -1,0 +1,10 @@
+<% if @user %>
+	<p> You are logged in! Hi <%= @user.fname %> </p>
+<% else %>
+	<p> Sorry, I don't know who you are. Please login. </p>
+<% end %>
+
+<%= link_to("login", login_path(@user)) %>
+<%= link_to("post", new_post_path(@post)) %>
+
+

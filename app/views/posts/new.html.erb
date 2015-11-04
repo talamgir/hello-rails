@@ -1,0 +1,6 @@
+<%= form_for @post, :url => {:action => "create"} do |f| %>
+<%= f.label :content %>
+<%= f.text_field :content %>
+<p class="button"><%= submit_tag "Post" %></p>
+<% end %>
+

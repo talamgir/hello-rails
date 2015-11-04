@@ -1,0 +1,12 @@
+<%= form_tag('/searchresults', method: :get) do %>
+	<%= label_tag 'fname' %>
+	<%= text_field_tag 'fname' %>
+
+	<%= label_tag 'lname' %>
+	<%= text_field_tag 'lname' %>
+
+	<%= label_tag 'email' %>
+	<%= text_field_tag 'email' %>
+
+	<%= submit_tag 'submit' %>
+<% end %>
